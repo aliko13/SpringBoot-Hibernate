@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: database
+    image: postgres:13.1
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-q", "-d", "postgres", "-U", "admin" ]
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    restart: always
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=springdata_hibernate
+    ports:
+      - "5433:5432"

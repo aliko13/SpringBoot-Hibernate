@@ -1,15 +1,16 @@
 package com.example.springdata_hibernate.repository;
 
 import com.example.springdata_hibernate.IntegrationTestHelper;
-import com.example.springdata_hibernate.entity.Check;
-import com.example.springdata_hibernate.entity.CreditCard;
-import com.example.springdata_hibernate.entity.Payment;
+import com.example.springdata_hibernate.entity.single_table.Check;
+import com.example.springdata_hibernate.entity.single_table.CreditCard;
+import com.example.springdata_hibernate.entity.single_table.Payment;
+import com.example.springdata_hibernate.repository.single_table.PaymentRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class PaymentRepositoryTest extends IntegrationTestHelper {
+public class SingleTableInheritanceTest extends IntegrationTestHelper {
 
     @Autowired
     private PaymentRepository paymentRepository;
@@ -27,7 +28,7 @@ public class PaymentRepositoryTest extends IntegrationTestHelper {
         // then
         assertThat(savedPayment)
                 .extracting(CreditCard::getCardNumber, Payment::getAmount)
-                .containsExactly("123456", 12345d);
+                .containsExactly(creditCard.getCardNumber(), creditCard.getAmount());
     }
 
     @Test
@@ -43,6 +44,6 @@ public class PaymentRepositoryTest extends IntegrationTestHelper {
         // then
         assertThat(savedPayment)
                 .extracting(Check::getCheckNumber, Payment::getAmount)
-                .containsExactly("12356", 1244d);
+                .containsExactly(check.getCheckNumber(), check.getAmount());
     }
 }

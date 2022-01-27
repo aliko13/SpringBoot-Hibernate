@@ -1,4 +1,4 @@
-package com.example.springdata_hibernate.entity;
+package com.example.springdata_hibernate.entity.single_table;
 
 import javax.persistence.*;
 

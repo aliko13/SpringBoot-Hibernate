@@ -1,10 +1,10 @@
 package com.example.springdata_hibernate.repository;
 
 import com.example.springdata_hibernate.IntegrationTestHelper;
-import com.example.springdata_hibernate.entity.single_table.Check;
-import com.example.springdata_hibernate.entity.single_table.CreditCard;
-import com.example.springdata_hibernate.entity.single_table.Payment;
-import com.example.springdata_hibernate.repository.single_table.PaymentRepository;
+import com.example.springdata_hibernate.entity.inheritance_strategies.single_table.Check;
+import com.example.springdata_hibernate.entity.inheritance_strategies.single_table.CreditCard;
+import com.example.springdata_hibernate.entity.inheritance_strategies.single_table.Payment;
+import com.example.springdata_hibernate.repository.inheritance_strategies.single_table.PaymentRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

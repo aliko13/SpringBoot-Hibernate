@@ -1,4 +1,4 @@
-package com.example.springdata_hibernate.entity.table_per_class;
+package com.example.springdata_hibernate.entity.inheritance_strategies.table_per_class;
 
 import javax.persistence.*;
 

@@ -1,10 +1,10 @@
 package com.example.springdata_hibernate.repository;
 
 import com.example.springdata_hibernate.IntegrationTestHelper;
-import com.example.springdata_hibernate.entity.table_per_class.Facebook;
-import com.example.springdata_hibernate.entity.table_per_class.Post;
-import com.example.springdata_hibernate.entity.table_per_class.Twitter;
-import com.example.springdata_hibernate.repository.table_per_class.PostRepository;
+import com.example.springdata_hibernate.entity.inheritance_strategies.table_per_class.Facebook;
+import com.example.springdata_hibernate.entity.inheritance_strategies.table_per_class.Post;
+import com.example.springdata_hibernate.entity.inheritance_strategies.table_per_class.Twitter;
+import com.example.springdata_hibernate.repository.inheritance_strategies.table_per_class.PostRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -1,10 +1,10 @@
 package com.example.springdata_hibernate.repository;
 
 import com.example.springdata_hibernate.IntegrationTestHelper;
-import com.example.springdata_hibernate.entity.joined.Animal;
-import com.example.springdata_hibernate.entity.joined.Pet;
-import com.example.springdata_hibernate.entity.joined.Wild;
-import com.example.springdata_hibernate.repository.joined.AnimalRepository;
+import com.example.springdata_hibernate.entity.inheritance_strategies.joined.Animal;
+import com.example.springdata_hibernate.entity.inheritance_strategies.joined.Pet;
+import com.example.springdata_hibernate.entity.inheritance_strategies.joined.Wild;
+import com.example.springdata_hibernate.repository.inheritance_strategies.joined.AnimalRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

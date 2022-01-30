@@ -1,4 +1,4 @@
-package com.example.springdata_hibernate.entity.joined;
+package com.example.springdata_hibernate.entity.inheritance_strategies.joined;
 
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
